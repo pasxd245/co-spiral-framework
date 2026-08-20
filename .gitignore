@@ -1,0 +1,129 @@
+# =============================================================================
+# CoSF research repository — .gitignore
+#
+# Two categories matter more than the rest and are NOT negotiable:
+#   (1) copyrighted source material
+#   (2) human-subjects data
+# Do not add exceptions to either. See CLAUDE.md §6.
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# (1) Copyrighted material — never commit
+# Keep your own notes in lit/notes/*.md and metadata in lit/references.bib instead.
+# -----------------------------------------------------------------------------
+*.pdf
+*.epub
+*.mobi
+*.djvu
+*.azw*
+lit/papers/
+lit/pdfs/
+lit/books/
+
+# -----------------------------------------------------------------------------
+# (2) Human-subjects data — never commit
+# No ethics approval exists yet. Once it does, data still lives outside git.
+# -----------------------------------------------------------------------------
+# NOTE: written as `data/*` not `data/` — git cannot re-include a file whose parent
+# directory is excluded, so `data/` + `!data/README.md` would silently drop the README.
+data/*
+!data/README.md
+participants/
+consent/
+*consent*
+*participant*
+*transcript*
+*interview*
+*.sav
+*.dta
+recordings/
+*.wav
+*.mp3
+*.mp4
+*.mov
+
+# -----------------------------------------------------------------------------
+# Private working material — "good to have, should not commit"
+# Anything under these paths is yours alone and stays local.
+# -----------------------------------------------------------------------------
+private/
+scratch/
+_local/
+drafts/
+inbox/
+*.private.md
+*.local.md
+TODO.private*
+
+# Supervisor correspondence, applications, anything with third-party names in it
+correspondence/
+applications/
+
+# -----------------------------------------------------------------------------
+# Reference manager
+# -----------------------------------------------------------------------------
+zotero/
+zotero-data/
+*.bib.bak
+*.sqlite
+
+# -----------------------------------------------------------------------------
+# Analysis environments
+# -----------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+.Rhistory
+.RData
+.Rproj.user/
+renv/library/
+*.Rproj
+
+# -----------------------------------------------------------------------------
+# JS / tooling
+# -----------------------------------------------------------------------------
+node_modules/
+dist/
+build/
+.cache/
+
+# -----------------------------------------------------------------------------
+# LaTeX build artefacts
+# -----------------------------------------------------------------------------
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.lot
+*.out
+*.synctex.gz
+*.toc
+*.log
+
+# -----------------------------------------------------------------------------
+# Secrets
+# -----------------------------------------------------------------------------
+.env
+.env.*
+*.key
+*.pem
+credentials*
+secrets*
+
+# -----------------------------------------------------------------------------
+# OS / editor noise
+# -----------------------------------------------------------------------------
+.DS_Store
+._*
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo
+*~

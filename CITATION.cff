@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+title: "Co-Spiral Framework (CoSF): A bounded research programme on human–AI cognitive coupling"
+message: "If you refer to this research programme, please cite it as below."
+type: dataset
+abstract: >-
+  CoSF is a provisional, bounded research-and-design programme investigating when a
+  human–AI working relationship becomes a coupled adaptive system, what cognitive-state
+  transitions this produces in the human, and whether pattern-triggered interventions can
+  preserve human epistemic agency. It is not a completed theory of cognition and makes no
+  claim to be a universal framework.
+authors:
+  # Name form is settled -- use it identically everywhere from now on.
+  #   Family: Pham | Middle: Quang | First: Vien
+  #   CFF has no middle-name field, so the middle name lives in given-names.
+  #   Renders as "Vien Quang Pham" / cites as "Pham, V. Q."
+  # Use this same string on ORCID, Google Scholar, and every submission. Inconsistent
+  # author strings are the usual reason one researcher ends up with two citation profiles.
+  - family-names: "Pham"
+    given-names: "Vien Quang"
+    email: "pasxd245@gmail.com"
+    affiliation: "Independent"    # TODO(vien): update on enrolment (target Dec 2026)
+    # orcid: "https://orcid.org/0000-0000-0000-0000"   # register free at orcid.org
+repository-code: "https://github.com/pasxd245/co-spiral-framework"
+license: CC-BY-SA-4.0
+version: "0.1.0-stage0"
+date-released: 2026-08-20
+keywords:
+  - human-AI interaction
+  - epistemic agency
+  - appropriate reliance
+  - cognitive coupling
+  - distributed cognition
+  - research programme

@@ -1,120 +1,106 @@
-# 🌐 Co-Spiral Framework HI×AI  
+# Co-Spiral Framework (CoSF)
 
-*A Human–AI Co-Creation Framework for Knowledge, Ethics, and Innovation*  
+**A bounded research programme on human–AI cognitive coupling.**
 
-**📘 Main Framework Documents**  
-Choose your language below to explore the living framework:
-
-[🌍 English (current)](./docs/en/CoSF_v1.1_draft.md)  
-[🇻🇳 Tiếng Việt (Vietnamese)](./docs/vi/CoSF_v1.1_draft.md)
-
----
-
-## 🧭 Overview
-
-**Co-Spiral Framework HI×AI (CoSF)** is an open philosophical–technical framework for  
-co-creating knowledge between **Human Intelligence (HI)** and **Artificial Intelligence (AI)**.
-
-Its goal is to help humans and AI **learn, reflect, and evolve together**,  
-based on three progressive levels of collaboration:
-
-| Level                     | Description                                            | Outcome                          |
-| ------------------------- | ------------------------------------------------------ | -------------------------------- |
-| **1. Prompt Engineering** | Crafting precise and contextual prompts                | Effective AI communication       |
-| **1.5. Manual RAG**       | Merging personal context or local files without coding | Human-driven knowledge retrieval |
-| **2. RAG System**         | Automated retrieval-augmented generation pipelines     | Dynamic, data-grounded AI        |
-| **3. Fine-Tuning Ethos**  | Aligning AI with human values, tone, and moral intent  | Ethically co-evolving AI         |
+> **Epistemic status: conjecture.** This is a provisional research-and-design programme, not
+> a completed theory, not an ontology, and not a universal framework. No data has been
+> collected. Its novelty is unestablished pending a literature review. Read
+> [`docs/en/epistemic-status.md`](./docs/en/epistemic-status.md) before reading anything
+> else here.
 
 ---
 
-## 🎯 Project Purpose
+## The question
 
-1. **Share an open knowledge architecture** for human–AI co-creation.  
-2. **Track versions** through GitHub tags and releases (knowledge ≈ software).  
-3. **Enable accessible “Manual RAG” (Level 1.5)** for non-technical users.  
-4. **Foster Telic Rung thinking** — ethical resonance and self-reflective use of AI.  
+AI does not merely automate tasks. In extended interactions with memory, feedback, and
+adaptive capability, an AI system can act back on how a person thinks, sets goals, decides,
+and understands themselves.
 
----
+This programme investigates one slice of that:
 
-## 📁 Repository Structure
+> When does a human–AI working relationship become a **coupled adaptive system**; what
+> cognitive-state transitions does it produce in the human; and can such a system be
+> designed so as to preserve human epistemic agency?
 
-| Folder       | Description                                              |
-| ------------ | -------------------------------------------------------- |
-| `/docs/en`   | English documentation (drafts and guides)                |
-| `/docs/vi`   | Vietnamese documentation (translations and notes)        |
-| `/releases`  | Stable, version-tagged knowledge snapshots (v1.0, v1.1…) |
-| `/playbooks` | Practical how-to guides by CoSF level                    |
-| `/examples`  | Prompt sets, manual-RAG cases, and applied projects      |
-| `/knowledge` | Bibliography and reference summaries (fair-use only)     |
+The primary hypothesis is **H2**: extended AI-assisted work changes the *warrant structure*
+of a person's beliefs — their confidence, the evidence they can cite for it, and their
+ability to catch their own errors — independently of whether task performance improves.
 
 ---
 
-## 🔖 Versioning & Language
+## What is here
 
-- **Current version:** `v1.1-draft`  
-- **Languages available:** English 🇬🇧 · Vietnamese 🇻🇳  
-  - [View English docs](./docs/en/CoSF_v1.1_draft.md)  
-  - [Xem bản tiếng Việt](./docs/vi/CoSF_v1.1_draft.md)  
+| Path | Contents |
+|---|---|
+| [`docs/en/research-programme.md`](./docs/en/research-programme.md) | The programme: motivation, hypotheses, empirical design, falsification discipline |
+| [`docs/en/epistemic-status.md`](./docs/en/epistemic-status.md) | The labelling system and the cite-downward rule |
+| [`docs/en/glossary.md`](./docs/en/glossary.md) | Every construct, with status. Undefined terms are marked UNDEFINED |
+| [`docs/en/coupling-conditions.md`](./docs/en/coupling-conditions.md) | Experimental conditions C0–C4, and the 2×2 that replaced the old "levels" ladder |
+| [`ledger/`](./ledger/) | Append-only hypothesis record: claims, predictions, kill criteria |
+| [`lit/`](./lit/) | Literature workspace. **Not started — this is the blocking gate** |
+| [`speculative/`](./speculative/) | Fiction and design fiction. Quarantined. Never evidence |
+| [`CLAUDE.md`](./CLAUDE.md) | Working agreement for AI sessions in this repo |
+| [`AI-USE.md`](./AI-USE.md) | Disclosure of how AI was used in producing this work |
 
-Stable versions are stored in `/releases/` and tagged via GitHub Releases.
-
----
-
-## ⚖️ Licensing
-
-- **Text & Framework Content:** [Creative Commons BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)  
-- **Code Samples / Scripts:** [MIT License](https://opensource.org/licenses/MIT)  
-- All referenced works follow *fair-use* standards with clear citations.
-
----
-
-## 🤝 Contributing
-
-Everyone is welcome to co-spiral with us ✨  
-
-You can:  
-
-- Suggest or edit documentation.  
-- Translate into other languages.  
-- Add case studies, prompt sets, or Telic reflections.  
-- Improve the structure via TRIZ, PDCA, or ethical review.
-
-See [CONTRIBUTING.md](./CONTRIBUTING.md) for contribution workflow and review checklist.  
-Each submission is evaluated through **Telic Rung · TRIZ · PDCA** principles.
+Folders are created when they have content, never in advance. `constructs/` and
+`instruments/` open once the literature review survives; `studies/` once a protocol exists.
 
 ---
 
-## 🌱 Philosophy
+## How this repository is disciplined
 
-> “AI is not here to replace thinking —  
-> it’s here to remove friction so that human thinking can spiral further.”  
-> — *CoSF Manifesto v1.1*
+The programme's own stated failure modes are construct inflation and unfalsifiability. Four
+mechanisms make the discipline structural rather than aspirational:
 
-CoSF treats every participant as a **co-creator of meaning** —  
-each contributor a *living spiral* in the human–AI continuum.
+1. **Epistemic status on every document.** `speculative` / `conjecture` / `operational` /
+   `evidenced` / `retired`.
+2. **The cite-downward rule.** An `operational` document may never cite a `speculative` one
+   as support. Imagination can suggest a hypothesis; it can never justify one.
+3. **Kill criteria fixed in advance,** recorded in an append-only ledger, never revised
+   after seeing results.
+4. **Outcome measures authored elsewhere.** A framework that supplies both the intervention
+   and the metric cannot be refuted. Instruments will be borrowed from validated
+   literature, kept separate from this programme's own constructs.
 
----
-
-## 📡 Roadmap
-
-| Milestone | Focus                                            |
-| --------- | ------------------------------------------------ |
-| **v1.1**  | Stable multilingual structure (EN + VI)          |
-| **v1.2**  | Publish Manual RAG Guide + community examples    |
-| **v1.3**  | Translation system + GitHub Pages site           |
-| **v2.0**  | Fine-Tuning Ethos Toolkit + Telic evaluation API |
-
-See [ROADMAP.md](./ROADMAP.md) for detailed goals.
+One construct — *human epistemic agency* — is targeted for operationalisation. Everything
+else (`Telic Rung`, `ΔU`, `PCL`, `PCV`, `Agent-Self`) is backlogged in the glossary and may
+not be built on.
 
 ---
 
-## 🌐 Language Navigation
+## Current state
 
-- 🇬🇧 [English (current)](./README.md)  
-- 🇻🇳 [Tiếng Việt (Vietnamese)](./docs/vi/CoSF_v1.1_draft.md)  
-- 🌏 [Contribute a translation](./.github/ISSUE_TEMPLATE/translation_contribution.md)
+- **Stage 0.** Scaffolding complete. Literature review not started.
+- **Domain `D_j`: not chosen.** This blocks all study design.
+- **No human-subjects data exists, and none may be collected.** There is no ethics approval
+  and none is available before enrolment (targeted December 2026). Pre-enrolment work is
+  limited to N=1 self-observation.
+- **Next action:** literature review. It is the cheapest possible test of the programme, and
+  it can retire the primary hypothesis before anything expensive is built.
 
 ---
 
-**Maintained by:** Sam × GPT-5 (Guru)  
-📍 [Co-Spiral-Framework-HIxAI](https://github.com/pasxd245/co-spiral-framework)
+## Language
+
+English is canonical. Vietnamese versions are produced on request. Preregistrations and
+protocols remain English-only to avoid version skew between two records of the same
+hypothesis.
+
+---
+
+## Licence
+
+- **Documentation and written content:** [CC BY-SA 4.0](./LICENSE-DOCS)
+- **Code, scripts, configuration:** [MIT](./LICENSE-CODE)
+
+Referenced works are cited; no copyrighted source files are redistributed here.
+
+---
+
+## Author
+
+Maintained by a single human author. **AI systems are not authors of this work** —
+authorship requires accountability for the claims made. AI involvement is substantial and is
+disclosed in detail in [`AI-USE.md`](./AI-USE.md).
+
+Citation metadata: [`CITATION.cff`](./CITATION.cff).

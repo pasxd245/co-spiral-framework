@@ -1,9 +1,7 @@
-This repository contains two types of materials:
+This repository is dual-licensed.
 
-1) Documentation & written content (the “Docs”)
-   Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).
-   <https://creativecommons.org/licenses/by-sa/4.0/>
+  Documentation and written content ......... CC BY-SA 4.0  → see LICENSE-DOCS
+  Code, scripts, and configuration .......... MIT           → see LICENSE-CODE
 
-2) Source code samples, scripts, and configuration (the “Code”)
-   Licensed under the MIT License.
-   <https://opensource.org/licenses/MIT>
+The split exists so that each licence is machine-detectable. See CITATION.cff for
+attribution details.
